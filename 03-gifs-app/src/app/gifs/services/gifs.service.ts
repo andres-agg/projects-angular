@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
 
 import { Gif, SearchResponse } from '../interfaces/gifs.interfaces';
-import { Observable } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
 export class GifsService {
