@@ -18,8 +18,8 @@ export class ByCapitalPageComponent implements OnInit {
   constructor( private countriesService: CountriesService ) {}
 
   ngOnInit(): void {
-    this.countries = this.countriesService.cacheStorage.byCapital.countries;
-    this.initialValue = this.countriesService.cacheStorage.byCapital.term;
+    this.countries = this.countriesService.cacheStore.byCapital.countries;
+    this.initialValue = this.countriesService.cacheStore.byCapital.term;
   }
 
   searchByCapital( term: string ): void {
